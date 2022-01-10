@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginPage"
+    >
+
+
+    <TextView
+        android:id="@+id/orgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DeCodeX"
+        android:textSize="40dp"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/loginHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orgName"
+        android:layout_centerHorizontal="true"
+        android:text="Login here"
+        android:textSize="25dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:id="@+id/userName"
+        android:paddingTop="40dp"
+        android:layout_below="@id/loginHere"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Username:"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+           />
+        
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/enterYourName"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Enter your name"
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:id="@+id/password"
+        android:paddingTop="40dp"
+        android:layout_below="@id/userName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Password"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/enterYourPwd"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Enter your password"
+            android:inputType="numberPassword"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_create"
+        android:layout_below="@id/password"
+        android:text="Didn't have an account ? Click here to sign up"
+        android:paddingTop="20dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_create"
+        android:layout_centerInParent="true"
+        android:text="LOGIN"
+        />
+
+</RelativeLayout>
